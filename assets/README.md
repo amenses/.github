@@ -4,19 +4,17 @@ Organization visual assets for the GitHub profile and documentation.
 
 | File | Description |
 |------|-------------|
-| `organization-logo.svg` | Amenses wordmark (vector, from ADS) |
+| `ai-logo-alt.png` | **Primary** — Amenses Innovation wordmark (monochrome) |
+| `ai-logo.png` | Alternate logo variant |
+| `organization-logo.svg` | Legacy wordmark (superseded by `ai-logo-alt.png`) |
 | `architecture.svg` | High-level architecture diagram (placeholder) |
 
-## PNG Versions
+## Usage
 
-GitHub organization profiles work best with PNG images. To generate PNG versions:
+The organization profile README uses the primary logo via:
 
-```bash
-# Using rsvg-convert (librsvg)
-rsvg-convert -w 400 assets/organization-logo.svg -o assets/organization-logo.png
-
-# Using ImageMagick
-convert -background none -resize 400x assets/organization-logo.svg assets/organization-logo.png
+```
+https://raw.githubusercontent.com/amenses/.github/main/assets/ai-logo-alt.png
 ```
 
-Replace `architecture.svg` with your team's architecture diagram and export as `architecture.png` when ready.
+Replace `architecture.svg` with your team's architecture diagram when ready.

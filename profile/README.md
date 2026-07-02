@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/amenses/.github/main/assets/organization-logo.svg" alt="Amenses Innovation" width="280" />
+<img src="https://raw.githubusercontent.com/amenses/.github/main/assets/ai-logo-alt.png" alt="Amenses Innovation" width="420" />
 
 # Reimagining Collaboration · Breaking Physical Barriers
 
