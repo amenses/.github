@@ -1,0 +1,27 @@
+# Default owners for all files
+* @amenses-innovation/engineering
+
+# Documentation
+/docs @amenses-innovation/product
+/docs @amenses-innovation/engineering
+
+# Infrastructure and CI/CD
+/.github/workflows @amenses-innovation/devops
+/infrastructure @amenses-innovation/devops
+
+# Mobile
+/mobile @amenses-innovation/mobile
+
+# Backend
+/backend @amenses-innovation/backend
+**/api @amenses-innovation/backend
+
+# Frontend
+/frontend @amenses-innovation/frontend
+**/*.tsx @amenses-innovation/frontend
+**/*.jsx @amenses-innovation/frontend
+
+# Security-sensitive configuration
+/SECURITY.md @amenses-innovation/security
+/.github/workflows/codeql.yml @amenses-innovation/security
+/.github/dependabot.yml @amenses-innovation/devops

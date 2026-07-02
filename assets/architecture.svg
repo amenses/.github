@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" rx="12" fill="#0F1419"/>
+  <text x="400" y="40" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="20" font-weight="600" fill="#F1F3F4">Amenses Platform Architecture</text>
+
+  <!-- Client Layer -->
+  <rect x="50" y="80" width="700" height="70" rx="8" fill="#1A2332" stroke="#2DD4BF" stroke-width="1"/>
+  <text x="400" y="110" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="14" fill="#94A3B8">Client Layer  Web App · Mobile · API Consumers</text>
+
+  <!-- API Gateway -->
+  <rect x="200" y="180" width="400" height="50" rx="8" fill="#1A2332" stroke="#14B8A6" stroke-width="2"/>
+  <text x="400" y="212" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="14" font-weight="600" fill="#F1F3F4">API Gateway / Load Balancer</text>
+
+  <!-- Services -->
+  <rect x="50" y="260" width="200" height="60" rx="8" fill="#1A2332" stroke="#334155" stroke-width="1"/>
+  <text x="150" y="295" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="13" fill="#F1F3F4">Auth Service</text>
+
+  <rect x="300" y="260" width="200" height="60" rx="8" fill="#1A2332" stroke="#334155" stroke-width="1"/>
+  <text x="400" y="295" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="13" fill="#F1F3F4">Core Platform</text>
+
+  <rect x="550" y="260" width="200" height="60" rx="8" fill="#1A2332" stroke="#334155" stroke-width="1"/>
+  <text x="650" y="295" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="13" fill="#F1F3F4">AI / ML Services</text>
+
+  <!-- Data Layer -->
+  <rect x="100" y="360" width="250" height="60" rx="8" fill="#1A2332" stroke="#334155" stroke-width="1"/>
+  <text x="225" y="395" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="13" fill="#F1F3F4">PostgreSQL · Redis</text>
+
+  <rect x="450" y="360" width="250" height="60" rx="8" fill="#1A2332" stroke="#334155" stroke-width="1"/>
+  <text x="575" y="395" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="13" fill="#F1F3F4">Object Storage · Queues</text>
+
+  <!-- Arrows -->
+  <line x1="400" y1="150" x2="400" y2="180" stroke="#14B8A6" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="400" y1="230" x2="400" y2="260" stroke="#64748B" stroke-width="1.5"/>
+  <line x1="400" y1="320" x2="400" y2="360" stroke="#64748B" stroke-width="1.5"/>
+
+  <text x="400" y="470" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="11" fill="#64748B">Replace with your team's architecture diagram</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#14B8A6"/>
+    </marker>
+  </defs>
+</svg>

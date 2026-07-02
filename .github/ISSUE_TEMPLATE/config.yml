@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security Vulnerability
+    url: https://github.com/amenses-innovation/.github/blob/main/SECURITY.md
+    about: Report security issues privately — do not open a public issue
+  - name: Engineering Standards
+    url: https://github.com/amenses-innovation/engineering-standards
+    about: Organization policies and governance documents
+  - name: Support Guide
+    url: https://github.com/amenses-innovation/.github/blob/main/SUPPORT.md
+    about: How to get help and escalate issues

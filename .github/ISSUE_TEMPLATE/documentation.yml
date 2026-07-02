@@ -1,0 +1,65 @@
+name: Documentation Request
+description: Request new documentation or improvements to existing docs
+title: "[Docs]: "
+labels: ["documentation", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help us improve our documentation. Describe what's missing or unclear.
+
+  - type: input
+    id: repository
+    attributes:
+      label: Repository
+      description: Which repository's documentation needs updating?
+      placeholder: e.g., engineering-standards
+    validations:
+      required: true
+
+  - type: dropdown
+    id: doc-type
+    attributes:
+      label: Documentation Type
+      options:
+        - README
+        - API reference
+        - Architecture / design
+        - Runbook / operations
+        - Onboarding
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-state
+    attributes:
+      label: Current State
+      description: What documentation exists today (if any)? What is unclear or missing?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed Changes
+      description: What should the documentation say or cover?
+    validations:
+      required: true
+
+  - type: textarea
+    id: audience
+    attributes:
+      label: Target Audience
+      description: Who will read this documentation?
+      placeholder: e.g., new engineers, API consumers, DevOps
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have checked existing docs and this gap is not already covered
+          required: true
