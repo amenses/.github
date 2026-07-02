@@ -21,7 +21,7 @@ jobs:
       has-go: ${{ steps.detect.outputs.has-go }}
       has-rust: ${{ steps.detect.outputs.has-rust }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Detect languages and package managers
         id: detect
@@ -37,7 +37,7 @@ jobs:
     needs: detect
     if: needs.detect.outputs.has-node == 'true'
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -77,7 +77,7 @@ jobs:
             enabled: ${{ needs.detect.outputs.has-rust }}
             setup: rust
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Skip if project type not detected
         if: matrix.enabled != 'true'
@@ -142,7 +142,7 @@ jobs:
     needs: [detect, lint, test]
     if: always() && !cancelled()
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Set up Node.js
         if: needs.detect.outputs.has-node == 'true'
