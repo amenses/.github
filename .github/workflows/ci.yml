@@ -99,7 +99,7 @@ jobs:
 
       - name: Set up Go
         if: matrix.setup == 'go' && matrix.enabled == 'true'
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v7
         with:
           go-version: "1.22"
           cache-dependency-path: go.sum
@@ -163,7 +163,7 @@ jobs:
 
       - name: Set up Go
         if: needs.detect.outputs.has-go == 'true'
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v7
         with:
           go-version: "1.22"
 
