@@ -40,7 +40,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: "20"
           cache: npm
@@ -85,7 +85,7 @@ jobs:
 
       - name: Set up Node.js
         if: matrix.setup == 'node' && matrix.enabled == 'true'
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: "20"
           cache: npm
@@ -146,7 +146,7 @@ jobs:
 
       - name: Set up Node.js
         if: needs.detect.outputs.has-node == 'true'
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: "20"
           cache: npm
